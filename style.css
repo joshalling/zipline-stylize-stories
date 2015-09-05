@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Bangers|Slabo+27px);
+html {
+  background-color: #7BB9C6;
+  font-family: 'slabo 27px', serif;
+  color: #122125;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: 'bangers';
+  font-size: 45px;
+}
+
+h2 {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  color: #30303f;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #30303f;
+}
+
+p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.container {
+  width: 85%;
+  margin: auto;
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+.container article {
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  background-color: #d4e8ec;
+  border-radius: 0  0 6px 6px;
+  margin-bottom: 10px;
+}
+
+.story-item img {
+  width: 100%;
+  border-bottom: 3px solid #30303f;
+}
+
+.story-info p {
+  display: inline-block;
+  margin: 0 5% 5px;
+}
+.story-info p:first-child {
+  width: 50%;
+}
+.story-info p:last-child {
+  width: 30%;
+  text-align: right;
+}

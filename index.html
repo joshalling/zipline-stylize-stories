@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="camperNews">
+<head>
+	<meta charset="utf-8">
+	<title>Camper News | Free Code Camp</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body ng-controller="storyCtrl">
+	<h1>Free Code Camp</h1>
+	<h2>Camper News</h2>
+	<div class="container">
+		<article class="story-item" ng-repeat="story in stories">
+            <a ng-href="{{story.link}}" target="_blank">
+            	<img ng-src="{{story.image}}">
+            	<p>{{story.headline}}</p>
+            </a>
+            <div class="story-info">
+            	<p><a ng-href="http://www.freecodecamp.com/news/{{story.storyLink}}" target="_blank">
+                	comments
+            	</a></p>
+            	<p>{{story.numUpVotes}} <i class="fa fa-thumbs-o-up"></i></p>
+            </div>
+        </article>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+	<script src="app.js" type="text/javascript"></script>
+</body>
